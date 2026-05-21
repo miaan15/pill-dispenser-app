@@ -23,6 +23,17 @@ h1 {
   font-size: 28px;
 }
 
+.blynk-warning {
+  background: #fef5e7;
+  color: #d69e2e;
+  padding: 10px 16px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 13px;
+  margin-bottom: 20px;
+  border: 1px solid #fbd38d;
+}
+
 .add-schedule {
   display: flex;
   gap: 20px;
@@ -127,6 +138,11 @@ h1 {
   margin-bottom: 0;
 }
 
+.schedule-item.triggered {
+  border-color: #48bb78;
+  background: #f0fff4;
+}
+
 .schedule-info {
   display: flex;
   flex-direction: column;
@@ -150,15 +166,13 @@ h1 {
   font-size: 14px;
 }
 
-.count-badge {
-  display: inline-block;
-  background: #fef5e7;
-  color: #d69e2e;
-  padding: 4px 10px;
-  border-radius: 6px;
-  font-size: 12px;
+.triggered-badge {
+  background: #48bb78;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 11px;
   font-weight: 600;
-  width: fit-content;
 }
 
 .time-left {
